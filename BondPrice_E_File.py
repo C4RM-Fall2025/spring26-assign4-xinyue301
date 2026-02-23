@@ -1,11 +1,18 @@
 
 
 def getBondPrice_E(face, couponRate, yc):
-    pvcf=0
-    cf=face*couponRate
-    for i, y in enumerate(yc)
-    pvcf=cf/(1+y)**i
-    if i==m:
-        pvcf=pvcf+face/(1+y)**i
-    pvcfsum=pvcfsum+pvcf
-return(pvcfsum)
+   
+    pvfcsum = 0
+    cf = face * couponRate  
+
+    n = len(yc)  
+
+    for t, y in enumerate(yc, start=1):  
+        pvfc = cf / (1 + y) ** t
+
+        if t == n:  
+            pvfc = pvfc + face / (1 + y) ** t
+
+        pvfcsum = pvfcsum + pvfc
+
+    return pvfcsum
