@@ -1,6 +1,6 @@
 
 
-def FizzBuzz(start, finish):
+def FizzBuzz(start,finish):
 
     outlist = []
 
