@@ -8,7 +8,7 @@ def getBondPrice(y, face, couponRate, m, ppy=1):
         cf=face*couponRate
         for i in range(1,m+1):
             pvcf=cf*(1+y)**(-i)
-            if 1==m:
+            if i==m:
                 pvcf=pvcf+face*(1+y)**(-i)
 
             pvcfsum=pvcfsum+pvcf
