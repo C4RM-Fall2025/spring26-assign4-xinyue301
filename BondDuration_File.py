@@ -36,5 +36,5 @@ def getBondDuration(y, face, couponRate, m, ppy = 1):
 
         bondDuration = (sumProduct / pvcfsum) / ppy
 
-    return （bondDuration）
+    return bondDuration
 
